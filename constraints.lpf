@@ -1,0 +1,15 @@
+# Clock de 25 MHz
+LOCATE COMP "clk" SITE "P3";
+IOBUF PORT "clk" IO_TYPE=LVCMOS33;
+
+# Botão externo em E1
+LOCATE COMP "btn_raw" SITE "E1";
+IOBUF PORT "btn_raw" IO_TYPE=LVCMOS33 PULLMODE=DOWN;
+
+# LED externo em E4
+LOCATE COMP "led_ext" SITE "E4";
+IOBUF PORT "led_ext" IO_TYPE=LVCMOS33;
+
+# LED onboard verde em L2
+LOCATE COMP "led_onboard" SITE "L2";
+IOBUF PORT "led_onboard" IO_TYPE=LVCMOS33;
